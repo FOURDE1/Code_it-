@@ -1,0 +1,75 @@
+html, body {
+    height: 100%;
+    background: linear-gradient(to bottom,  #112D4E,#3d0c60)
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-light .navbar-toggler-icon:focus {
+    outline: none;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+/* Make the logo picture larger and rounded */
+.navbar-brand img {
+    width: 75px;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #112D4E;
+    border-radius: 15px; /* Rounded corners for active link */
+}
+
+.navbar-light .navbar-nav .nav-link:hover:not(.active) {
+    color: #e75480; /* Dark pink color for text on hover */
+    border-radius: 15px; /* Rounded corners for hover links */
+}
+
+.container {
+    background-color: #fff; /* Set the container background color to white */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.container h2 {
+    font-size: 24px; /* Increase the font size */
+}
+
+.container ul {
+    font-size: 18px; /* Increase the font size */
+    margin-left: 20px; /* Add some left margin for better readability */
+}
+#countdown-container {
+    text-align: center;
+   
+}
+.countdown-container {
+    margin-top: 20px; /* Adjust this value to push the content up */
+}
+#countdown {
+    font-size: 80px; /* Increase the font size for the countdown */
+    color: white;
+}
+
+#start {
+    font-size: 24px; /* Increase the font size for the "Start countdown" button */
+    display: block;
+    margin-top: 10px; /* Move the button down slightly */
+    text-align: center;
+}

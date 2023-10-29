@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 3</title>
+
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add your custom CSS file link here -->
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#" style="color: #fff;">
+        <img src="image/logo.png" alt="Logo" width="60">
+        Code_it;
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+                <a class="nav-link " href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="page2.html">Round 2</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link active" href="round3.html">Round 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="tie.html">Tie Breaker</a>
+            </li>
+            
+        </ul>
+    </div>
+</nav>
+<div class="container mt-5" id="rules">
+    <h1 class="text-center">Round 3</h1>
+
+   
+    <div class="container mt-5">
+        <h2 class="mt-4">Rules</h2>
+        <ul>
+            <li>You will be asked to list a certain topic.</li>
+            <li>Each question will have a large number of possible answers.</li>
+            <li>You will take turns providing one answer to the question.</li>
+            <li>You are allowed with one "pass" to skip your turn if you can't answer within the allotted time.</li>
+            <li>Each turn is limited to 5 seconds.</li>
+            <li>If you fail to provide an answer within the allocated time, whether or not you've used your pass, you will be eliminated from the round.</li>
+
+            <li>The winner of this round earns 5 points.</li>
+        </ul>
+    </div>
+</div>
+<div id="countdown-container" class="countdown-container d-flex flex-column align-items-center justify-content-center mt-4">
+    <div id="countdown" style="font-size: 80px; color: white; text-align: center; margin-bottom: 10px;"></div>
+    <h1 id="timeUp" style="display: none; color: red; margin-bottom: 10px;">Time's Up!</h1>
+    <button id="start" class="btn btn-secondary" style="margin-bottom: 20px;">Start countdown</button>
+</div>
+
+
+
+
+
+<!-- Add Bootstrap JS and Popper.js scripts at the end of the body -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script3.js"></script>
+</body>
+</html>

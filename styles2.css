@@ -1,0 +1,121 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom,  #112D4E,#3d0c60)
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #fff;
+}
+
+.navbar-light .navbar-toggler-icon:focus {
+    outline: none;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #fff;
+}
+
+/* Make the logo picture larger and rounded */
+.navbar-brand img {
+    width: 75px;
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #112D4E;
+    border-radius: 15px; /* Rounded corners for active link */
+}
+
+.navbar-light .navbar-nav .nav-link:hover:not(.active) {
+    color: #e75480; /* Dark pink color for text on hover */
+    border-radius: 15px; /* Rounded corners for hover links */
+}
+
+.group-square {
+    width: 80px;
+    height: 80px;
+    background-color: #f0f0f0;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.group-square.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+
+
+.package-select {
+    width: auto;
+    display: inline;
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+
+.package-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#packageContainer,
+#countdown-container {
+    display: none;
+}
+/* styles.css */
+.carousel-item img {
+    max-width: 400px;
+    height: auto;
+}
+/* Reduce the size of the carousel control icons */
+.carousel-control-prev, .carousel-control-next {
+    font-size: 1rem; /* Adjust the size as needed */
+}
+
+/* Adjust the position and padding of the carousel control buttons */
+.carousel-control-prev {
+    left: 0;
+    right: auto;
+    padding: 5px; /* Adjust the padding as needed */
+}
+
+.carousel-control-next {
+    right: 0;
+    left: auto;
+    padding: 5px; /* Adjust the padding as needed */
+}
+nav {
+    z-index: 1;
+}
+.index{
+    z-index: 0;
+}
+
+
+
+

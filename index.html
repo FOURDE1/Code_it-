@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round 1</title>
+
+    <!-- Add Bootstrap CSS link here -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Add your custom CSS file link here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#" style="color: #fff;">
+            <img src="image/logo.png" alt="Logo" width="60">
+            Code_it;
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link active" href="#">Round 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page2.html">Round 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="round3.html">Round 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tie.html">Tie Breaker</a>
+                </li>
+               
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Container -->
+    <div id="container" class="container text-center mt-5">
+        <h1 style="color:#fff;">Random Generator</h1>
+        <p style="color:#fff;">Click the button to start the random selection.</p>
+        <button id="selectButton" class="btn btn-primary">Start</button>
+
+        <div class="mt-4">
+            <div id="result" class="mt-3 text-light"></div>
+            <div class="group-box">
+                <div class="group-square" id="group1">Group 1</div>
+                <div class="group-square" id="group2">Group 2</div>
+                <div class="group-square" id="group3">Group 3</div>
+            </div>
+        </div>
+
+
+    </div>
+    <div id="countdown-container" class="countdown-container d-flex flex-column align-items-center justify-content-center" style="display: none; text-align: center;">
+        <div id="countdown" style="font-size: 64px; color: white;"></div>
+        <div class="countdown-content">
+            <h1 id="timeUp" class="mt-5" style="display: none; color: red; font-size: 48px;">Time's Up!</h1>
+            <div id="logo-container" class="mt-3" style="display: none;">
+                <img src="image/Clock-icon.png" alt="clock" class="logo-image">
+            </div>
+        </div>
+    </div>
+    
+    <div class="text-center">
+        <button id="startCount" class="btn btn-secondary mt-2 ">Start countdown</button>
+    </div>
+    <!-- Add Bootstrap JS and Popper.js scripts at the end of the body -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
