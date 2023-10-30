@@ -15,11 +15,19 @@ document.getElementById("selectButton").addEventListener("click", function () {
     var animationInterval = setInterval(function () {
         groupSquares.forEach(square => square.classList.remove("active"));
         
-        // Choose a random group and highlight it
-        selectedGroupIndex = Math.floor(Math.random() * totalGroups);
+        // Choose a random group with a bias
+        var randomValue = Math.random();
+        if (randomValue < 0.4) {
+            selectedGroupIndex = 0; // 40% chance for group 1
+        } else if (randomValue < 0.7) {
+            selectedGroupIndex = 1; // 30% chance for group 2
+        } else {
+            selectedGroupIndex = 2; // 30% chance for group 3
+        }
+        
         groupSquares[selectedGroupIndex].classList.add("active");
-        selectedGroupIndex++;
-        resultElement.innerHTML = "Final Selection: " + selectedGroupIndex;
+        resultElement.innerHTML = "Final Selection: " + (selectedGroupIndex + 1);
+        
         if (currentGroupIndex === 0) {
             currentIteration++;
         }
@@ -29,12 +37,12 @@ document.getElementById("selectButton").addEventListener("click", function () {
             
             setTimeout(function () {
                 var selectedGroup = selectedGroupIndex + 1;
-                
-               
+                // Add your code here for what to do after the final selection.
             }, animationDuration * iterations);
         }
     }, animationDuration);
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     var countdownInterval;
