@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("countdown-container").style.display = "block";
 
             targetDate = new Date();
-            targetDate.setSeconds(targetDate.getSeconds() + 6);
+            targetDate.setSeconds(targetDate.getSeconds() + 10);
             countdownInterval = setInterval(updateCountdown, 1000);
             updateCountdown();
         }
